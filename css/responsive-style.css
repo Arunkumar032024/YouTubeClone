@@ -16,6 +16,17 @@
 }
 @media (max-width:767px) {
     /* header section design */
+    header .middle{
+        padding: 0 0.5rem;
+    }
+    header .right .fa-video,
+    header .right .fa-bell,
+    header .middle .fa-microphone{
+        display: none;
+    }
+    header .right #search{
+        display: inline;
+    }
     /* End header section design */
     
     
@@ -32,6 +43,13 @@
 }
 @media (max-width:592px) {
     /* header section design */
+    header .middle{
+        display: none;
+    }
+    header .right .fa-video,
+    header .right .fa-bell{
+        display: inline;
+    }
     /* End header section design */
     
     
@@ -51,6 +69,9 @@
 }
 @media (max-width:480px) {
     /* header section design */
+    header .right .fa-video{
+        display: none;
+    }
     /* End header section design */
     
     
@@ -70,6 +91,10 @@
 }
 @media (max-width:333px) {
     /* header section design */
+    header .left i,
+    header .right .fa-bell{
+        display: none;
+    }
     /* End header section design */
     
     

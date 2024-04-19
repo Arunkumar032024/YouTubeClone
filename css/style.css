@@ -1,12 +1,145 @@
+/* custom design */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --light-white: rgba(0,0,0,0.02);
+    --white: #fff;
+    --black: #000;
+    --light-black: rgba(0,0,0,0.1);
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 1.413rem;
+    cursor: pointer;
+    padding: 0.813rem;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+i:hover::after{
+    position: absolute;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 9px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 2px;
+}
+i:hover{
+    background-color: var(--light-black);
+}
+.img-fluid{
+    width: 100%;
+}
+/* End custom design */
+
+
 /* header section design */
+header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+header .left,
+header .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+}
+#logo{
+    width: 120px;
+}
+header .left .fa-bars:hover::after{
+    content: 'Menu';
+}
+header .middle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+header .middle .search{
+    flex: 1;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    border: 1px solid var(--light-black);
+}
+header .middle .search input{
+    flex: 1;
+    padding: 0.713rem 1.5rem;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: transparent;
+}
+header .middle .search i{
+    flex-basis: 70px;
+    background-color: var(--light-white);
+    border-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+header .middle .search i:hover{
+    background-color: var(--light-black);
+}
+header .middle .search i:hover::after{
+    content: 'search';
+}
+header .right .fa-video:hover::after{
+    content: 'shorts';
+}
+header .right .fa-bell{
+    position: relative;
+}
+header .right .fa-bell:hover::after{
+    content: 'notification';
+}
+header .right .fa-bell span{
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: #f00;
+    border-radius: 50%;
+    color: var(--white);
+}
+header .right .fa-user{
+    background-color: var(--light-white);
+}
+header .right .fa-user:hover::after{
+    content: 'User';
+}
+header .right .fa-user:hover{
+    background-color: var(--light-black);
+}
+header .right #search{
+    display: none;
+}
+header .right #search:hover::after{
+    content: 'search';
+}
+
 /* End header section design */
 
 
