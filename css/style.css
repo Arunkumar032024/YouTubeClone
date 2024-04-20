@@ -175,6 +175,9 @@ nav ul li a{
     transition: all .3s ease;
     margin: 0 1rem;
 }
+nav ul li a.active{
+    background-color: var(--light-black);
+}
 nav ul li a:hover{
     background-color: var(--light-black);
 }
