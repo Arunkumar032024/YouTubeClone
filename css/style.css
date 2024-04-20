@@ -144,6 +144,39 @@ header .right #search:hover::after{
 /* End header section design */
 
 
+/* navbar section design */
+nav{
+    position: fixed;
+    top: 75px;
+    left: 100px;
+    width: calc(100% - 100px);
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    height: inherit;
+    overflow-x: auto;
+}
+nav ul::-webkit-scrollbar{
+    height: 0;
+}
+nav ul li a{
+    padding: 5px 10px;
+    background-color: var(--light-white);
+    border-radius: 3px;
+    transition: all .3s ease;
+    margin: 0 1rem;
+}
+nav ul li a:hover{
+    background-color: var(--light-black);
+}
+/* End navbar section design */
+
 /* main section design */
 
 /* sidebar section design */
