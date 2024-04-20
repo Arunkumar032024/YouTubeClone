@@ -53,6 +53,7 @@ header{
     left: 0;
     display: flex;
     align-items: center;
+    background-color: var(--white);
 }
 header .left,
 header .right{
@@ -146,6 +147,36 @@ header .right #search:hover::after{
 /* main section design */
 
 /* sidebar section design */
+aside{
+    width: 100px;
+    min-height: calc(100vh - 75px);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: var(--white);
+}
+aside div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-size: 0.625rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+aside div:hover{
+    background-color: var(--light-black);
+}
+aside div i{
+    pointer-events: none;
+    padding: 0;
+}
+aside div img{
+    width: 30%;
+}
 /* End sidebar section design */
 
 
