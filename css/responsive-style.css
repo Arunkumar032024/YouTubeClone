@@ -78,6 +78,9 @@
     /* main section design */
 
     /* sidebar section design */
+    aside{
+        display: none;
+    }
     /* End sidebar section design */
     
     
@@ -89,7 +92,7 @@
     /* footer section design */
     /* End footer section design */
 }
-@media (max-width:333px) {
+@media (max-width:350px) {
     /* header section design */
     header .left i,
     header .right .fa-bell{
