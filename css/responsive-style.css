@@ -84,7 +84,8 @@
     /* End sidebar section design */
     
     /* navbar section design */
-    navbar{
+    nav{
+        left: 0;
         width: 100%;
     }
     /* End navbar section design */
