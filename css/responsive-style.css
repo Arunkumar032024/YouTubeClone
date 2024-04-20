@@ -106,6 +106,9 @@
     /* End main section design */
 
     /* footer section design */
+    footer{
+        display: flex;
+    }
     /* End footer section design */
 }
 @media (max-width:350px) {
