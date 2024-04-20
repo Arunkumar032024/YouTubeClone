@@ -10,6 +10,9 @@
     
     
     /* grid-layout section design */
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
     /* End grid-layout section design */
 
     /* End main section design */
@@ -60,6 +63,9 @@
     
     
     /* grid-layout section design */
+    .grid{
+        grid-template-columns: 1fr;
+    }
     /* End grid-layout section design */
 
     /* End main section design */
@@ -85,6 +91,9 @@
     
     
     /* grid-layout section design */
+    .grid{
+        margin-left: 10px;
+    }
     /* End grid-layout section design */
 
     /* End main section design */
